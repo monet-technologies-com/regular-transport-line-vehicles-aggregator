@@ -6,13 +6,14 @@ from api.contract import Contract
 from api.fleet import Fleet
 from api.external_api import Slack
 
-NON_COUNT_LIST = [1, 180]
+
+NON_COUNT_LIST = [1, 180]  # 集計対象外の契約ID
 
 
 def main():
     regular_transport_line_contract_ids = get_regular_transport_line_contract_ids()
 
-    # カウント対象外の契約IDを除外
+    # 集計対象外の契約IDを除外
     regular_transport_line_contract_ids = [regular_transport_line_contract_id
                                            for regular_transport_line_contract_id in regular_transport_line_contract_ids
                                            if regular_transport_line_contract_id not in NON_COUNT_LIST]
