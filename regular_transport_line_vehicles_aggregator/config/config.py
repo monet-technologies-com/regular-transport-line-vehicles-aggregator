@@ -49,7 +49,7 @@ if not env_config:
     raise ValueError(f'Invalid environment: {ENV}')
 
 # slack webhook url
-slack_webhook = 'https://hooks.slack.com/services/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'
+slack_webhook = 'https://hooks.slack.com/services/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'
 
 # HTTPヘッダーを設定
 mlp_api_header = {
