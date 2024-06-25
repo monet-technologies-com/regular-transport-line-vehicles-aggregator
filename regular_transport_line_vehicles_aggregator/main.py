@@ -87,7 +87,7 @@ def count_monthly_assignmented_vehicles(vehicle_assignment_plans: dict):
     Returns:
     dict: {
         'xxxx/yy車両割当計画': {
-            subtotal: {contract_name: number_of_vehicle, contract_name: number_of_vehicle},  # 契約ごとの小計
+            subtotal: {contract_display_name: number_of_vehicle, contract_display_name: number_of_vehicle},  # 契約ごとの小計
             total: xxx  # 合計
             }
         }
